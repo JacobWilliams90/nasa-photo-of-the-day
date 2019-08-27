@@ -31,3 +31,39 @@
     transform: rotate(360deg);
   }
 }
+
+img {
+  max-width: 1600px;
+  max-height: 900px;
+}
+
+body {
+  margin: 0 auto;
+  background: black;
+  color: white;
+  width: 1080px;
+}
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.foot{
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: white;
+}
