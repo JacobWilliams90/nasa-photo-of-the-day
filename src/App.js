@@ -4,6 +4,7 @@ import Header from './head'
 import Body from './body'
 import Footer from './foot'
 
+
 function App() {
   return (
     <div className="App">
