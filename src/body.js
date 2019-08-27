@@ -10,13 +10,14 @@ const Body = () => {
         getNasaImg(setImg, setDate, setDes);
     },[]);
 
-    
+    if (!img) return <h3>Loading...</h3>;
+
     return (
         <div className='body'>
             <h2>{date}</h2>
             <p>{des}</p>
             <div className='pic'>
-                <img src={img} />
+                <img src={img} alt='NASA Potd'/>
             </div>
         </div>
     )
