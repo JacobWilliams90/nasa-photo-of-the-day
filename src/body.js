@@ -16,7 +16,7 @@ const Body = () => {
             <h2>{date}</h2>
             <p>{des}</p>
             <div className='pic'>
-                <img src={img}/>
+                <img src={img} />
             </div>
         </div>
     )
