@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getNasaImg } from './nasapic'
+import { StyledImg } from './StyledImg'
+import { StyledBody } from './StyledBody'
 
 const Body = () => {
     const [img, setImg] = useState();
@@ -13,13 +15,11 @@ const Body = () => {
     if (!img) return <h3>Loading...</h3>;
 
     return (
-        <div className='body'>
+        <StyledBody>
             <h2>{date}</h2>
             <p>{des}</p>
-            <div className='pic'>
-                <img src={img} alt='NASA Potd'/>
-            </div>
-        </div>
+            <StyledImg src={img} />
+        </StyledBody>
     )
 }
 

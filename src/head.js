@@ -1,15 +1,18 @@
 import React from 'react';
+import { CustomButton } from './StyledButton';
+import { StyledHead } from './StyledHead';
 
 const Header = () => {
     return (
-        <div className='header'>
+        <StyledHead>
             {
             <h1>Nasa Photo of the day</h1>
             }
-            {
-            <a href='http://www.nasa.gov'>Take me back to NASA</a>
+            {<CustomButton>
+                <a href='http://www.nasa.gov'>Take me back to NASA</a>
+            </CustomButton>
             }
-        </div>
+        </StyledHead>
     )
 }
 

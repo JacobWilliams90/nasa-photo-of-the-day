@@ -1,10 +1,11 @@
 import React from 'react';
+import { StyledBody } from './StyledBody';
 
 const Footer = () => {
     return (
-        <div className='foot'>
+        <StyledBody>
             <p>Copyright 2019</p>
-        </div>
+        </StyledBody>
     )
 }
 

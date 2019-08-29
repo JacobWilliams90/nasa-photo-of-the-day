@@ -3,15 +3,16 @@ import "./App.css";
 import Header from './head'
 import Body from './body'
 import Footer from './foot'
+import { StyledPage } from './StyledPage';
 
 
 function App() {
   return (
-    <div className="App">
+    <StyledPage>
       <Header />
       <Body />
       <Footer />
-    </div>
+    </StyledPage>
   );
 }
 
