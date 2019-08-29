@@ -17,6 +17,7 @@ const CustomButton = styled.button`
     color: white;
     border: none;
     border-radius: 4px;
+    padding: 1.6rem;
     &:hover {
         opacity: 0.7;
     }

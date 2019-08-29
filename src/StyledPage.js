@@ -5,8 +5,8 @@ const StyledPage = styled.html`
     margin: 0 auto;
     background: black;
     color: white;
-    max-width: 1920px;
-    height: 900px;
+    max-width: 1080px;
+    height: 100%;
 `
 
 export { StyledPage }
