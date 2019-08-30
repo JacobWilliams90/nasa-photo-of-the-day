@@ -5,11 +5,11 @@ import { StyledImg } from './StyledImg'
 import { StyledBody } from './StyledBody'
 
 const Body = (prop) => {
-    const [title, setTitle] = useState();
-    const [img, setImg] = useState();
-    const [date, setDate] = useState();
-    const [des, setDes] = useState();
-
+    // const [title, setTitle] = useState();
+    // const [img, setImg] = useState();
+    // const [date, setDate] = useState();
+    // const [des, setDes] = useState();
+    const [data, setData] = useState();
     // useEffect(() =>{
     //     getNasaImg(setTitle,setImg, setDate, setDes);
     // },[]);
@@ -19,24 +19,25 @@ const Body = (prop) => {
             axios
                 .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
                 .then(res => {
-                    title(res.data.title);
-                    pic(res.data.hdurl); 
-                    date(res.data.date);
-                    des(res.data.explanation);
+                    setData(res.data);
+                    // title(res.data.title);
+                    // pic(res.data.hdurl); 
+                    // date(res.data.date);
+                    // des(res.data.explanation);
                 })
                 .catch(err => console.log(err))
         }
-        getNasaImg(setTitle, setImg, setDate, setDes)
+        getNasaImg()
     },[])
 
-    if (!img) return <h3>Loading...</h3>;
+    if (!data) return <h3>Loading...</h3>;
 
     return (
         <StyledBody>
-            <h2>{title}</h2>
-            <h4>{date}</h4>
-            <p>{des}</p>
-            <StyledImg src={img} />
+            <h2>{data.title}</h2>
+            <h4>{data.date}</h4>
+            <p>{data.explanation}</p>
+            <StyledImg src={data.hdurl} />
         </StyledBody>
     )
 }

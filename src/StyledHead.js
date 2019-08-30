@@ -6,6 +6,7 @@ const StyledHead = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    width: 80%;
 `
 
 export { StyledHead };

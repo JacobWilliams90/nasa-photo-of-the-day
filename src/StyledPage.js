@@ -5,7 +5,7 @@ const StyledPage = styled.html`
     margin: 0 auto;
     background: black;
     color: white;
-    max-width: 1080px;
+    width: 100%;
     height: 100%;
 `
 
