@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
+import { StyledPage } from './StyledPage';
 import Header from './head'
 import Body from './body'
 import Footer from './foot'
-import { StyledPage } from './StyledPage';
 
 
 function App() {

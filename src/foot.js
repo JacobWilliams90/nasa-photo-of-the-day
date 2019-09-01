@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyledBody } from './StyledBody';
+import { StyledFoot } from './StyledFoot';
 
 const Footer = () => {
     return (
-        <StyledBody>
+        <StyledFoot>
             <p>Copyright 2019</p>
-        </StyledBody>
+        </StyledFoot>
     )
 }
 

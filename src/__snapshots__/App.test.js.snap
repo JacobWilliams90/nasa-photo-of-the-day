@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<html
+  className="sc-bdVaJa etRxVd"
+>
+  <div
+    className="sc-htpNat dGbXDD"
+  >
+    <h1>
+      Nasa Photo of the day
+    </h1>
+    <button
+      className="sc-bwzfXH kbGHtW"
+    >
+      <a
+        href="http://www.nasa.gov"
+      >
+        Take me back to NASA
+      </a>
+    </button>
+  </div>
+  <h3>
+    Loading...
+  </h3>
+  <div
+    className="sc-EHOje tnHhq"
+  >
+    <p>
+      Copyright 2019
+    </p>
+  </div>
+</html>
+`;
